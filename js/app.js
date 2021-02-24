@@ -1,6 +1,6 @@
 'use strict';
 
-let hour =  ['06:00 AM','07:00 AM','08:00 AM','09:00 AM','10:00 AM','11:00 AM','12:00 PM','01:00 PM','02:00 PM','03:00 PM','04:00 PM','05:00 PM','06:00 PM','07:00 PM'];
+let hour = ['06:00 AM', '07:00 AM', '08:00 AM', '09:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '01:00 PM', '02:00 PM', '03:00 PM', '04:00 PM', '05:00 PM', '06:00 PM', '07:00 PM'];
 
 const seattle = {
   name: 'seattle',
@@ -8,11 +8,11 @@ const seattle = {
   max: 65,
   avg: 6.3,
   cookiesSales: [],
-  customerPerHour: [],
+  customerPerHour: [],//[54, 676, 778,........., 17];
   totalSales: 0,
   getSales: function () {
-    for ( let i=0; i<hour.length; i++ ) {
-      let cookie = Math.ceil( getRandomArbitrary( this.min, this.max ) * this.avg );
+    for ( let i = 0; i < hour.length; i++ ) {
+      let cookie = Math.ceil( this.customerPerHour[i] * this.avg );
       this.cookiesSales.push( cookie );
       this.totalSales += cookie;
 
@@ -21,7 +21,7 @@ const seattle = {
 
 
   getCustomer: function () {
-    for ( let i=0; i<hour.length; i++ ) {
+    for ( let i = 0; i < hour.length; i++ ) {
       let customer = getRandomArbitrary( this.min, this.max );
       this.customerPerHour.push( customer );
     }
@@ -42,10 +42,10 @@ const seattle = {
     const ulElement = document.createElement( 'ul' );
     articleElement.appendChild( ulElement );
 
-    for ( let i=0; i<hour.length; i++ ) {
+    for ( let i = 0; i < hour.length; i++ ) {
       const liElement = document.createElement( 'li' );
       ulElement.appendChild( liElement );
-      liElement.textContent= `${hour[i]}:${this.cookiesSales[i]} cookies.`;
+      liElement.textContent = `${hour[i]}:${this.cookiesSales[i]} cookies.`;
     }
 
     const liElement = document.createElement( 'li' );
@@ -67,8 +67,8 @@ const Tokyo = {
   customerPerHour: [],
   totalSales: 0,
   getSales: function () {
-    for ( let i=0; i<hour.length; i++ ) {
-      let cookie = Math.ceil( getRandomArbitrary( this.min, this.max ) * this.avg );
+    for ( let i = 0; i < hour.length; i++ ) {
+      let cookie = Math.ceil( this.customerPerHour[i] * this.avg );
       this.cookiesSales.push( cookie );
       this.totalSales += cookie;
 
@@ -77,7 +77,7 @@ const Tokyo = {
 
 
   getCustomer: function () {
-    for ( let i=0; i<hour.length; i++ ) {
+    for ( let i = 0; i < hour.length; i++ ) {
       let customer = getRandomArbitrary( this.min, this.max );
       this.customerPerHour.push( customer );
     }
@@ -98,10 +98,10 @@ const Tokyo = {
     const ulElement = document.createElement( 'ul' );
     articleElement.appendChild( ulElement );
 
-    for ( let i=0; i<hour.length; i++ ) {
+    for ( let i = 0; i < hour.length; i++ ) {
       const liElement = document.createElement( 'li' );
       ulElement.appendChild( liElement );
-      liElement.textContent= `${hour[i]}:${this.cookiesSales[i]} cookies.`;
+      liElement.textContent = `${hour[i]}:${this.cookiesSales[i]} cookies.`;
     }
 
     const liElement = document.createElement( 'li' );
@@ -125,8 +125,8 @@ const Dubai = {
   customerPerHour: [],
   totalSales: 0,
   getSales: function () {
-    for ( let i=0; i<hour.length; i++ ) {
-      let cookie = Math.ceil( getRandomArbitrary( this.min, this.max ) * this.avg );
+    for ( let i = 0; i < hour.length; i++ ) {
+      let cookie = Math.ceil( this.customerPerHour[i] * this.avg );
       this.cookiesSales.push( cookie );
       this.totalSales += cookie;
 
@@ -135,7 +135,7 @@ const Dubai = {
 
 
   getCustomer: function () {
-    for ( let i=0; i<hour.length; i++ ) {
+    for ( let i = 0; i < hour.length; i++ ) {
       let customer = getRandomArbitrary( this.min, this.max );
       this.customerPerHour.push( customer );
     }
@@ -156,10 +156,10 @@ const Dubai = {
     const ulElement = document.createElement( 'ul' );
     articleElement.appendChild( ulElement );
 
-    for ( let i=0; i<hour.length; i++ ) {
+    for ( let i = 0; i < hour.length; i++ ) {
       const liElement = document.createElement( 'li' );
       ulElement.appendChild( liElement );
-      liElement.textContent= `${hour[i]}:${this.cookiesSales[i]} cookies.`;
+      liElement.textContent = `${hour[i]}:${this.cookiesSales[i]} cookies.`;
     }
 
     const liElement = document.createElement( 'li' );
@@ -184,8 +184,8 @@ const Paris = {
   customerPerHour: [],
   totalSales: 0,
   getSales: function () {
-    for ( let i=0; i<hour.length; i++ ) {
-      let cookie = Math.ceil( getRandomArbitrary( this.min, this.max ) * this.avg );
+    for ( let i = 0; i < hour.length; i++ ) {
+      let cookie = Math.ceil( this.customerPerHour[i] * this.avg );
       this.cookiesSales.push( cookie );
       this.totalSales += cookie;
 
@@ -194,7 +194,7 @@ const Paris = {
 
 
   getCustomer: function () {
-    for ( let i=0; i<hour.length; i++ ) {
+    for ( let i = 0; i < hour.length; i++ ) {
       let customer = getRandomArbitrary( this.min, this.max );
       this.customerPerHour.push( customer );
     }
@@ -215,10 +215,10 @@ const Paris = {
     const ulElement = document.createElement( 'ul' );
     articleElement.appendChild( ulElement );
 
-    for ( let i=0; i<hour.length; i++ ) {
+    for ( let i = 0; i < hour.length; i++ ) {
       const liElement = document.createElement( 'li' );
       ulElement.appendChild( liElement );
-      liElement.textContent= `${hour[i]}:${this.cookiesSales[i]} cookies.`;
+      liElement.textContent = `${hour[i]}:${this.cookiesSales[i]} cookies.`;
     }
 
     const liElement = document.createElement( 'li' );
@@ -246,8 +246,8 @@ const Lima = {
   customerPerHour: [],
   totalSales: 0,
   getSales: function () {
-    for ( let i=0; i<hour.length; i++ ) {
-      let cookie = Math.ceil( getRandomArbitrary( this.min, this.max ) * this.avg );
+    for ( let i = 0; i < hour.length; i++ ) {
+      let cookie = Math.ceil( this.customerPerHour[i] * this.avg );
       this.cookiesSales.push( cookie );
       this.totalSales += cookie;
 
@@ -256,7 +256,7 @@ const Lima = {
 
 
   getCustomer: function () {
-    for ( let i=0; i<hour.length; i++ ) {
+    for ( let i = 0; i < hour.length; i++ ) {
       let customer = getRandomArbitrary( this.min, this.max );
       this.customerPerHour.push( customer );
     }
@@ -277,10 +277,10 @@ const Lima = {
     const ulElement = document.createElement( 'ul' );
     articleElement.appendChild( ulElement );
 
-    for ( let i=0; i<hour.length; i++ ) {
+    for ( let i = 0; i < hour.length; i++ ) {
       const liElement = document.createElement( 'li' );
       ulElement.appendChild( liElement );
-      liElement.textContent= `${hour[i]}:${this.cookiesSales[i]} cookies.`;
+      liElement.textContent = `${hour[i]}:${this.cookiesSales[i]} cookies.`;
     }
 
     const liElement = document.createElement( 'li' );
@@ -295,39 +295,36 @@ const Lima = {
 
 
 function getRandomArbitrary( min, max ) {
-  return Math.floor( Math.random() * ( max - min + 1 )+ min );
+  return Math.floor( Math.random() * ( max - min + 1 ) + min );
 }
 
-
-seattle.getSales();
 seattle.getCustomer();
+seattle.getSales();
 seattle.render();
 console.log( seattle );
 
 
-Tokyo.getSales();
 Tokyo.getCustomer();
+Tokyo.getSales();
 Tokyo.render();
 console.log( Tokyo );
 
 
-
-Dubai.getSales();
 Dubai.getCustomer();
+console.log( Dubai.customerPerHour );
+Dubai.getSales();
 Dubai.render();
 console.log( Dubai );
 
 
 
-
-Paris.getSales();
 Paris.getCustomer();
+Paris.getSales();
 Paris.render();
 console.log( Paris );
 
-
-Lima.getSales();
 Lima.getCustomer();
+Lima.getSales();
 Lima.render();
 console.log( Lima );
 
