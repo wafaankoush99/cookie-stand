@@ -121,56 +121,6 @@ tableFooter();
 
 
 
-// const parentElement = document.getElementById( 'shops' );
-
-// const articleElement = document.createElement( 'article' );
-// parentElement.appendChild( articleElement );
-
-// const h2Element = document.createElement( 'h2' );
-// articleElement.appendChild( h2Element );
-// h2Element.textContent = `${this.name}`;
-
-// const ulElement = document.createElement( 'ul' );
-// articleElement.appendChild( ulElement );
-
-// for ( let i=0; i<hour.length; i++ ) {
-//   const liElement = document.createElement( 'li' );
-//   ulElement.appendChild( liElement );
-//   liElement.textContent= `${hour[i]}:${this.cookiesSales[i]} cookies.`;
-// }
-
-
-// const liElement = document.createElement( 'li' );
-// ulElement.appendChild( liElement );
-// liElement.textContent = `Total: ${this.totalSales} cookies.`;
-///////////////////////////
-
-//const tableElement = document.createElement( 'table' );
-//articleElement.appendChild( tableElement );
-
-
-// const tbodyElement =document.createElement( 'tbody' );
-// tableElement.appendChild( tbodyElement );
-
-// const tr1Element = document.createElement( 'tr' );
-// tbodyElement.appendChild( tr1Element );
-
-// const td1Element = document.createElement( 'td' );
-// tr1Element.appendChild( td1Element );
-// td1Element.textContent = '';
-
-// const td2Element = document.createElement( 'td' );
-// tr1Element.appendChild( td2Element );
-// td2Element.textContent = '' + this.name;
-
-//for ( let i=0; i<hour.length; i++ ) {
-
-//const tr2Element = document.createElement( 'tr' );
-//tableElement.appendChild( tr2Element );
-
-
-
-//}
 
 
 
@@ -190,14 +140,3 @@ tableFooter();
 
 
 
-
-
-
-// Sale.prototype.getCustomer = function () {
-//   for ( let i=0; i<hour.length; i++ ) {
-//     let customer = getRandomNumber ( this.min, this.max );
-//     this.customerPerHour.push( customer );
-
-
-//   }
-// };
