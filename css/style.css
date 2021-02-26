@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=News+Cycle&family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
+
+hr{
+    margin: 80px;
+}
+h1 {
+    font-family: 'Krona One', sans-serif;
+    font-family: 'Parisienne', cursive;    color:   #000066
+    ;
+
+    }
+h2 {
+    font-family: 'Anton', sans-serif;
+   color: #73454f;
+
+}
+
+
+* {
+    margin:0;
+    padding: 0;
+    font-family: 'Fira Mono', monospace;
+    font-size: 15px;
+  
+
+}
+
+body {
+    margin: 10px 20px 10px 20px;
+    text-align: center;
+    max-width: 1600px;
+    background-color: white;
+}
+
+/*header {
+    background-image: url(https://lh3.googleusercontent.com/proxy/NxEHpNibjjADHHf1iqj--UzWXfCAZZm2DdSmYchNQ8bVD1Lr6AGTkg9l0jMvr40CiiWgW82fHE2Iu8si5mCUpyd4vGap56zL2BXJyfKeklkB65ZO-Md_dVMuTGwYxJfibMsliL-wMCYJpJ0CdNc68IyqP6QNLuX0ZCX7vGJJp7DftcW3LSY) ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}*/
+
+.intro {
+    text-align: center;
+    font-size: 30px;
+    margin:20px;
+    padding: 20px;
+}
+h1 {
+    font-size: 100px;
+}
+
+h2 {
+    font-size: 60px;
+}
+
+body header img {
+    border-radius: 5%;
+    width: 900px;
+    height: 500px;
+}
+
+main img {
+
+    width: 450px;
+    height: 300px;
+    border-radius: 50%;
+
+}
+
+header div img {
+
+    width: 200px;
+    height: 200px;
+    display: inline;
+    border-radius: 50%;
+    margin: 30px 60px 10px 60px;
+
+    
+
+}
+
+.p1 {
+    float: left;
+    padding: 100px;
+    list-style-position: inside;
+    background-color:#657b8d;
+    color: white;
+    width: 300px ;
+    height: 200px;
+    text-align: center;
+    border-radius: 10%;
+    margin: 50px;
+
+
+}
+
+.p2 {
+    float: right;
+    padding: 100px;
+    list-style-position: inside;
+    background-color:#657b8d;
+    color: white;
+        width: 300px ;
+    height: 200px;
+    text-align: center;
+    border-radius: 10%;
+    margin: 50px;
+
+
+
+
+}
+
+
+.salmon {
+}
+
+.data {
+    display: inline-block;
+}
+.p3 {
+    margin-top: 1050px;
+    list-style-position: inside;
+    margin-bottom: 50px;
+    background-color:#657b8d;
+    color: white;
+        padding: 100px;
+    width: 300px ;
+    height: 200px;
+    text-align: center;
+    background-position: center; 
+    border-radius: 10%;
+    margin-left: 420px;
+    margin-right: 420px;
+
+
+    
+
+}
+
+form input {
+    background-color:rgb(128, 148, 211);
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    color: white;
+    font-size: 25px;
+}
+
+footer {
+    background-color: dimgray;
+    color: white;
+    margin-top: 30px;
+}
